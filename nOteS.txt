@@ -1,0 +1,2 @@
+JavaScript is used for both front end and backend development.
+HTML for basic working, CSS for desiging of website and JAVASCRIPT for client side script 
