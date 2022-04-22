@@ -1,5 +1,5 @@
 <!-- https://www.youtube.com/watch?v=hKB-YGF14SY -->
-<!-- 1:38 hrs -->
+<!-- 2:25 hrs -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,9 +10,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First code for javascript</title>
 </head>
+<style>
+    div {
+        animation-fill-mode: forwards;
+        display: inline;
+    }
 
+    h1{
+        position: relative;
+        display: inline;
+        border:solid 5px rgb(40, 113, 178);
+        align-self: auto;
+        background: rgb(170, 197, 238);
+        color: rgb(26, 85, 136);
+    }
+    .bgcolor{
+        background: rgb(79, 46, 110);
+    }
+</style>
 <body>
-    <h1 style="color: rgb(209, 240, 32);">
+    <h1>
         welcome to my first code
     </h1>
     <div class="help" id="ati">
@@ -112,6 +129,29 @@
     console.log(myArray);
     myArray.push(12); // for adding at the last 
     console.log(myArray);
+
+
+    // getting date on real time 
+    let MyDate = new Date();
+    console.log(MyDate);
+    console.log(MyDate.getDate());
+    console.log(MyDate.getDay());
+    console.log(MyDate.getFullYear());
+    console.log(MyDate.getMonth());
+
+
+    // DOM MANIPULATION 
+    let elem = document.getElementById('btn');
+    console.log(elem);
+
+    let elemClass = document.getElementsByClassName('help');
+    console.log(elemClass);
+    elemClass[0].style.background = 'yellow';
+    // explicitly adding the class 
+    elemClass[0].classList.add('bgcolor')
+
+    let tn = document.getElementsByTagName('div');
+    console.log(tn);
 
 </script>
 </html>
