@@ -29,7 +29,7 @@
     }
 </style>
 <body>
-    <h1>
+    <h1 id="StartHeading">
         welcome to my first code
     </h1>
     <div class="help" id="ati">
@@ -152,6 +152,32 @@
 
     let tn = document.getElementsByTagName('div');
     console.log(tn);
+
+
+
+    // events in javascripts 
+    // this will be occur using the id of the div 
+
+    StartHeading.addEventListener('click', function(){
+        console.log("clicked the container");
+    })
+
+    StartHeading.addEventListener('mouseover', function(){
+        console.log("mouse over the container");
+    })
+
+    StartHeading.addEventListener('mouseout', function(){
+        console.log("mouse out the container");
+    })
+
+    StartHeading.addEventListener('mouseup', function(){
+        console.log("mouse up when clicked the container");
+    })
+
+    StartHeading.addEventListener('mousedown', function(){
+        console.log("mouse down when clicked on the container");
+    })
+
 
 </script>
 </html>
