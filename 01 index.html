@@ -1,5 +1,5 @@
 <!-- https://www.youtube.com/watch?v=hKB-YGF14SY -->
-<!-- 2:25 hrs -->
+<!-- 2:35 hrs -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +14,7 @@
     div {
         animation-fill-mode: forwards;
         display: inline;
-    }
+         }
 
     h1{
         position: relative;
@@ -23,6 +23,8 @@
         align-self: auto;
         background: rgb(170, 197, 238);
         color: rgb(26, 85, 136);
+        position: relative;
+        left: 70%;
     }
     .bgcolor{
         background: rgb(79, 46, 110);
@@ -47,6 +49,18 @@
             click me
         </button>
     </div>
+    <h2 id="two" class="twoclass">
+        <b>this is gonna changed</b> 
+    </h2>
+    <p class="twopara">
+        Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Impedit, 
+        ipsa consequuntur. Nobis 
+        consectetur ducimus alias accusamus 
+        maxime odit aliquid aperiam culpa, 
+        inventore labore, accusantium necessitatibus officia 
+        delectus officiis rerum consequuntur?
+    </p>
 </body>
 <script>
     // ways to write in java script 
@@ -177,7 +191,28 @@
     StartHeading.addEventListener('mousedown', function(){
         console.log("mouse down when clicked on the container");
     })
+    // document.getElementById('.StartHeading').innerHTML = "heading changed throught inner html";
 
+    // settimeout and setInterval
+    logKaru = ()=>{
+        let a = 1;
+        if (a%2==0){
+            document.getElementById('two').innerHTML = "help this guy";
+        }
+        else{
+            document.getElementById('two').innerHTML = "go away or get ready to die";
+        }
+        a = a+1;
+        console.log("i am your log");
+    }
+    // use clearInterval/ clearTimeout to cancel the set time 
+    setTimeout(logKaru, 3000); // given time k bd yeh function called hu jai gaa
 
+    changetheclass = ()=>{
+        document.getElementsByClassName('twopara').innerHTML = "this is changed";
+        setTimeout(logKaru, 3000);
+    }
+    //setInterval(changetheclass, 2000);
+    //setInterval(logKaru, 3000); // thisis for repeated callling of the funtion 
 </script>
 </html>
